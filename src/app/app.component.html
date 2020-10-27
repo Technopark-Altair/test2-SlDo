@@ -1,0 +1,29 @@
+<div class="block">
+  <div class="block-expression">
+    <label class="label operator block-expression__elem">
+      Первый оператор
+      <select class="select" [(ngModel)]="firstOperator">
+        <option>!</option>
+      </select>
+    </label>
+    <label class="label number block-expression__elem">
+      Первое число
+      <input class="input" type="number" [(ngModel)]="firstNumber">
+    </label>
+    <label class="label operator block-expression__elem">
+      Второй оператор
+      <select class="select" [(ngModel)]="secondOperator">
+        <option>&&</option>
+        <option>||</option>
+      </select>
+    </label>
+    <label class="label number block-expression__elem">
+      Второе число
+      <input class="input" [(ngModel)]="secondNumber" type="number">
+    </label>
+  </div>
+  <input type="submit" (click)="onClick()" class="block-button">
+  <p class="result">{{ result }}</p>
+  <p class="block-error" *ngIf="errorMsg">{{ errorMsg }}</p>
+</div>
+
