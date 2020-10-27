@@ -68,3 +68,11 @@
     background-color: rgba(236, 64, 122, 0.2);
   }
 }
+
+@media screen and (max-width: 640px) {
+  .block-expression {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+  }
+}
